@@ -195,7 +195,7 @@ def main():
                 current_menu = 1
             elif choice.upper() in ['I', 'INFO']:
                 print(f"\n{blue}Crylux v1.0 - Advanced Cybersecurity Toolkit")
-                print("GitHub: https://github.com/crylux")
+                print("GitHub: https://github.com/vantixt777")
                 input(f"{white}Press Enter to continue...")
             elif choice.upper() in ['S', 'SITE']:
                 webbrowser.open("https://crylux.org")
