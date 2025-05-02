@@ -3,7 +3,7 @@ Hier ist ein Text für das GitHub-Repository, das die Nutzung des Tools **BlueTi
 ---
 
 # **BlueTiger** - Ein fortschrittliches Cybersecurity-Toolkit
-https://github.com/vantixt777/Blue-Tiger/blob/c9f375da8a8c3cd4cff127da7c965f3eb6201e7a/bluetiger%20pic.png
+![Image Alt](https://github.com/vantixt777/Blue-Tiger/blob/c9f375da8a8c3cd4cff127da7c965f3eb6201e7a/bluetiger%20pic.png)
 **BlueTiger** ist ein vielseitiges Toolkit, das eine Vielzahl von Tools für Netzwerkanalyse, OSINT (Open Source Intelligence), Sicherheitstests und sogar einige Game-Tools kombiniert. Mit **BlueTiger** kannst du Schwachstellen scannen, Netzwerkverkehr überwachen, Social-Media-Daten analysieren und viele weitere fortschrittliche Funktionen für deine Sicherheit und Recherche nutzen. Es ist ideal für alle, die ihre Cybersicherheitsfähigkeiten verbessern möchten.
 
 ### **Features**
