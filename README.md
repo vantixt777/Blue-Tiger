@@ -1,90 +1,85 @@
-Hier ist ein Text für das GitHub-Repository, das die Nutzung des Tools **BlueTiger** beschreibt, einschließlich der Setup- und Start-Informationen:
 
----
+# **BlueTiger** - An Advanced Cybersecurity Toolkit
 
-# **BlueTiger** - Ein fortschrittliches Cybersecurity-Toolkit
 ![Image Alt](https://github.com/vantixt777/Blue-Tiger/blob/c9f375da8a8c3cd4cff127da7c965f3eb6201e7a/bluetiger%20pic.png)
-**BlueTiger** ist ein vielseitiges Toolkit, das eine Vielzahl von Tools für Netzwerkanalyse, OSINT (Open Source Intelligence), Sicherheitstests und sogar einige Game-Tools kombiniert. Mit **BlueTiger** kannst du Schwachstellen scannen, Netzwerkverkehr überwachen, Social-Media-Daten analysieren und viele weitere fortschrittliche Funktionen für deine Sicherheit und Recherche nutzen. Es ist ideal für alle, die ihre Cybersicherheitsfähigkeiten verbessern möchten.
+
+**BlueTiger** is a versatile toolkit that combines a variety of tools for network analysis, OSINT (Open Source Intelligence), security testing, and even some game tools. With **BlueTiger**, you can scan for vulnerabilities, monitor network traffic, analyze social media data, and take advantage of many other advanced features for your security and research needs. It's ideal for anyone looking to improve their cybersecurity skills.
 
 ### **Features**
 
-* **Netzwerktools**: Scanne Websites auf Schwachstellen, führe IP-Scans durch, analysiere Netzwerkverkehr und vieles mehr.
-* **OSINT-Tools**: Extrahiere Exif-Daten von Bildern, führe Google-Dorking durch, verfolge Benutzernamen und vieles mehr.
-* **Sicherheitstools**: Teste auf Phishing, knacken Passwörter, führe SQL-Injection-Tests durch und prüfe auf XSS-Schwachstellen.
-* **Game-Tools**: Überprüfe Roblox-IDs, analysiere Steam-Daten, verfolge den Handelsverlauf und vieles mehr.
+* **Network Tools**: Scan websites for vulnerabilities, perform IP scans, analyze network traffic, and more.
+* **OSINT Tools**: Extract EXIF data from images, perform Google Dorking, track usernames, and more.
+* **Security Tools**: Test for phishing, crack passwords, perform SQL injection tests, and check for XSS vulnerabilities.
+* **Game Tools**: Check Roblox IDs, analyze Steam data, track trade histories, and more.
+* **Problems**:Some tools in the tool are in German, so please don’t be surprised if you encounter them in that language.
 
-### **Anforderungen**
+### **Requirements**
 
-* Python 3.7+ (oder höher)
-* Die folgenden Python-Pakete müssen installiert sein:
+* Python 3.7+ (or higher)
+* The following Python packages need to be installed:
 
   * `colorama`
   * `termcolor`
   * `subprocess`
   * `webbrowser`
-  * Weitere Abhängigkeiten werden bei der Ausführung des Tools installiert.
+  * Additional dependencies will be installed when running the tool.
 
 ### **Installation**
 
-1. Lade das Repository herunter oder klone es mit folgendem Befehl:
+1. Download or clone the repository using the following command:
 
    ```bash
-   git clone https://github.com/dein-benutzername/BlueTiger.git
+   git clone https://github.com/your-username/BlueTiger.git
    ```
 
-2. Wechsle in das Verzeichnis:
+2. Navigate to the directory:
 
    ```bash
    cd BlueTiger
    ```
 
-3. Stelle sicher, dass alle benötigten Python-Pakete installiert sind. Du kannst dies mit `pip` tun:
+3. Ensure that all required Python packages are installed. You can do this with `pip`:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Wichtig**: Führe die `setup.bat` Datei aus, um das Tool vollständig einzurichten. Diese Datei wird alle notwendigen Vorbereitungen treffen.
+4. **Important**: Run the `setup.bat` file to fully set up the tool. This file will perform all necessary preparations.
 
    ```bash
    setup.bat
    ```
 
-5. Danach kannst du das Tool mit der `start.bat` starten:
+5. After that, you can start the tool by running `start.bat`:
 
    ```bash
    start.bat
    ```
 
-### **Verwendung**
+### **Usage**
 
-Nach dem Start des Tools wird das Hauptmenü angezeigt, das dir mehrere Optionen bietet. Du kannst durch das Menü navigieren, indem du die Zahlen für die Tools oder Befehle wie `N`, `B`, `I` verwendest:
+Once the tool is started, the main menu will appear, offering you several options. You can navigate through the menu by entering numbers for tools or commands like `N`, `B`, `I`:
 
-* **N**: Nächste Menüseite
-* **B**: Zurück zur vorherigen Menüseite
-* **I**: Informationen über das Tool
-* **S**: Öffnet die Website von Crylux
+* **N**: Next menu page
+* **B**: Go back to the previous menu
+* **I**: Information about the tool
+* **S**: Opens Crylux website
 
-### **Menüstruktur**
+### **Menu Structure**
 
-Das Tool ist in mehrere Kategorien unterteilt, darunter:
+The tool is divided into several categories, including:
 
-* **Netzwerk-Tools**: Z.B. Website-Vulnerability-Scanner, IP-Scanner
-* **OSINT-Tools**: Z.B. Google-Dorking, Social-Media-Scanner
-* **Sicherheitstools**: Z.B. Phishing-Simulator, Passwort-Cracker
-* **Game-Tools**: Z.B. Roblox-Info, Steam-OSINT
+* **Network Tools**: e.g., Website Vulnerability Scanner, IP Scanner
+* **OSINT Tools**: e.g., Google Dorking, Social Media Scanner
+* **Security Tools**: e.g., Phishing Simulator, Password Cracker
+* **Game Tools**: e.g., Roblox Info, Steam OSINT
 
-Die Tools bieten dir viele verschiedene Funktionen, um Sicherheitslücken zu finden, Daten zu sammeln und deine Fähigkeiten zu erweitern.
+These tools provide a variety of functions to help you identify vulnerabilities, gather data, and enhance your skills.
 
-### **Beispielhafte Nutzung**
+### **Example Usage**
 
-Wähle einfach eine Option aus dem Menü, um eines der Tools auszuführen. Zum Beispiel:
+Simply select an option from the menu to run one of the tools. For example:
 
-* **Wählen**: Gib die Zahl für das gewünschte Tool ein, um es auszuführen.
-* **Zurück**: Verwende den Befehl `B`, um zum vorherigen Menü zu gehen.
-
-### **Hilfe und Unterstützung**
-
-Für weitere Informationen und Anfragen besuche unser GitHub-Repository oder unsere offizielle Website:
-
+* **Select**: Enter the number for the desired tool to run it.
+* **Back**: Use the `B` command to go back to the previous menu.
 
