@@ -187,7 +187,7 @@ def main():
     while True:
         show_menu(current_menu)
         try:
-            choice = input(f"┌──({white}{os.getlogin()}@crylux)─{blue}[{white}~/{current_menu}\n└─{white}$ ")
+            choice = input(f"┌──({white}{os.getlogin()}@vantixt)─{blue}[{white}~/{current_menu}\n└─{white}$ ")
 
             if choice.upper() in ['N', 'NEXT']:
                 current_menu = 2
