@@ -198,7 +198,7 @@ def main():
                 print("GitHub: https://github.com/vantixt777")
                 input(f"{white}Press Enter to continue...")
             elif choice.upper() in ['S', 'SITE']:
-                webbrowser.open("https://crylux.org")
+                webbrowser.open("")
             elif choice.isdigit():
                 handle_selection(int(choice))
                 input(f"{white}Press Enter to continue...")
@@ -208,7 +208,7 @@ def main():
         except ValueError:
             print(f"{red}Please enter a valid number or command")
         except KeyboardInterrupt:
-            print(f"\n{blue}Exiting Crylux...")
+            print(f"\n{blue}Exiting BlueTiger...")
             sys.exit(0)
 
 if __name__ == "__main__":
