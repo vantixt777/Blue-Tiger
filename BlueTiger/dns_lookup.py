@@ -16,13 +16,13 @@ def create_banner():
 def dns_lookup(hostname):
     try:
         resolver = dns.resolver.Resolver()
-        # Abfrage nach A-Records (IPv4-Adressen)
+       
         a_records = resolver.resolve(hostname, 'A')
         print(f"\n\033[92mA-Records für {hostname}:\033[0m")
         for record in a_records:
             print(f"- {record.address}")
 
-        # Abfrage nach AAAA-Records (IPv6-Adressen)
+       
         try:
             aaaa_records = resolver.resolve(hostname, 'AAAA')
             print(f"\n\033[92mAAAA-Records für {hostname}:\033[0m")
@@ -34,7 +34,7 @@ def dns_lookup(hostname):
             print(f"\n\033[91mHostname {hostname} existiert nicht.\033[0m")
             return
 
-        # Abfrage nach MX-Records (Mail Exchange)
+        
         try:
             mx_records = resolver.resolve(hostname, 'MX')
             print(f"\n\033[92mMX-Records für {hostname}:\033[0m")
@@ -43,7 +43,7 @@ def dns_lookup(hostname):
         except dns.resolver.NoAnswer:
             print(f"\n\033[93mKeine MX-Records für {hostname} gefunden.\033[0m")
 
-        # Abfrage nach NS-Records (Name Server)
+        
         try:
             ns_records = resolver.resolve(hostname, 'NS')
             print(f"\n\033[92mNS-Records für {hostname}:\033[0m")
@@ -52,7 +52,7 @@ def dns_lookup(hostname):
         except dns.resolver.NoAnswer:
             print(f"\n\033[93mKeine NS-Records für {hostname} gefunden.\033[0m")
 
-        # Abfrage nach CNAME-Records (Canonical Name)
+     
         try:
             cname_records = resolver.resolve(hostname, 'CNAME')
             print(f"\n\033[92mCNAME-Records für {hostname}:\033[0m")
@@ -61,7 +61,7 @@ def dns_lookup(hostname):
         except dns.resolver.NoAnswer:
             print(f"\n\033[93mKeine CNAME-Records für {hostname} gefunden.\033[0m")
 
-        # Abfrage nach TXT-Records (Text)
+        
         try:
             txt_records = resolver.resolve(hostname, 'TXT')
             print(f"\n\033[92mTXT-Records für {hostname}:\033[0m")
