@@ -5,14 +5,14 @@ import sys
 import subprocess
 import webbrowser
 
-# Init colorama
+
 init(autoreset=True)
 
 blue = Fore.BLUE
 white = Fore.WHITE
 red = Fore.RED
 
-# Display banner with blue color using termcolor
+
 def print_banner():
     banner_text = """
 ▀█████████▄   ▄█       ███    █▄     ▄████████          ███      ▄█     ▄██████▄     ▄████████    ▄████████ 
@@ -32,7 +32,7 @@ def print_banner():
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-# Kategorien (unverändert)
+
 network_tools = [
     "Website-Vulnerability-Scanner",
     "Website-Info-Scanner",
@@ -85,7 +85,7 @@ game_tools = [
     "Valorant-Osint"
 ]
 
-# Funktion zur Darstellung eines Optionsblocks (unverändert)
+
 def format_option(number, name):
     return f"{blue}[{white}{str(number).zfill(2)}{blue}]{white} {name.ljust(30)[:30].replace('-', ' ')}"
 
@@ -94,7 +94,7 @@ def show_menu(menu_num=1):
     print_banner()
 
     if menu_num == 1:
-        # Menü 1: Network, OSINT, Security (mit blauem Muster)
+        
         print(f" ┌─ {blue}[{white}I{blue}]{white} Info{white} ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── {blue}[{white}N{blue}]{white} Next ─┐")
         print(f" ├─ ┌─────────────────┐{white} ────────────────────────────── ┌───────┐{white} ────────────────────────────── ┌────────────┐{white} ────────────────────────────── │")
         print(f" └─┬─┤ {blue}Network Tools{white} ├─────────┬──────────────┤ {blue}OSINT{white} ├──────────────┬────────────┤ {blue}Security{white} ├────────────┴─")
@@ -107,7 +107,7 @@ def show_menu(menu_num=1):
             print(f"   ├─ {net}├─ {osi}├─ {sec}")
 
     elif menu_num == 2:
-        # Menü 2: Game Tools (mit blauem Muster)
+      
         print(f" ┌─ {blue}[{white}I{blue}]{white} Info{white} ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── {blue}[{white}B{blue}]{white} Back ─┐")
         print(f"─┴─┬─┤ {blue}Game Tools{white} ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─")
         print(f"   │ └─────────────────┘")
@@ -119,7 +119,7 @@ def show_menu(menu_num=1):
 
 def handle_selection(option):
     file_mapping = {
-        # Network Tools
+    
         1: "website_vulnerability_scanner.py",
         2: "website_info_scanner.py",
         3: "website_url_scanner.py",
@@ -131,7 +131,7 @@ def handle_selection(option):
         9: "whois_query.py",
         10: "subnet_calculator.py",
 
-        # OSINT Tools
+       
         11: "get_image_exif.py",
         12: "google_dorking.py",
         13: "username_tracker.py",
@@ -142,7 +142,7 @@ def handle_selection(option):
         18: "social_media_scanner.py",
 
 
-        # Security Tools
+     
         21: "phishing_simulator.py",
         22: "password_cracker.py",
         23: "hash_analyzer.py",
@@ -154,7 +154,7 @@ def handle_selection(option):
         29: "mac_spoofer.py",
         30: "dns_spoof_detector.py",
 
-        # Game Tools
+     
         31: "roblox_cookie_info.py",
         32: "roblox_id_info.py",
         33: "roblox_user_info.py",
