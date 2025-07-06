@@ -21,7 +21,7 @@ BANNER = """
 
 print(BANNER)
 
-# Farbdefinitionen (falls im ursprünglichen Code verwendet)
+
 class color:
     RESET = '\033[0m'
     RED = '\033[91m'
@@ -32,50 +32,50 @@ class color:
     CYAN = '\033[96m'
     WHITE = '\033[97m'
 
-# Platzhalter für Funktionen, die im ursprünglichen Code existieren könnten
+
 def Title(title):
     print(f"\n[{color.CYAN}{title}{color.RESET}]")
 
 def ErrorModule(e):
     print(f"{color.RED}Error in module import: {e}{color.RESET}")
 
-def BEFORE(): # Muss angepasst werden, basierend auf dem ursprünglichen Code
+def BEFORE(): 
     return "["
 
-def current_time_hour(): # Muss angepasst werden, basierend auf dem ursprünglichen Code
+def current_time_hour(): 
     return "TIME"
 
-def AFTER(): # Muss angepasst werden, basierend auf dem ursprünglichen Code
+def AFTER(): 
     return "]"
 
-def INPUT(): # Muss angepasst werden, basierend auf dem ursprünglichen Code
+def INPUT(): 
     return "INPUT"
 
-def reset(): # Muss angepasst werden, basierend auf dem ursprünglichen Code
+def reset():
     return color.RESET
 
-def WAIT(): # Muss angepasst werden, basierend auf dem ursprünglichen Code
+def WAIT(): 
     return "WAIT"
 
-def INFO_ADD(): # Muss angepasst werden, basierend auf dem ursprünglichen Code
+def INFO_ADD():
     return "+"
 
-def white(): # Muss angepasst werden, basierend auf dem ursprünglichen Code
+def white(): 
     return color.WHITE
 
-def red(): # Muss angepasst werden, basierend auf dem ursprünglichen Code
+def red(): 
     return color.RED
 
-def Censored(text): # Muss angepasst werden, basierend auf dem ursprünglichen Code
+def Censored(text): 
     print(f"Censored: {text}")
 
-def Continue(): # Muss angepasst werden, basierend auf dem ursprünglichen Code
+def Continue(): 
     input("Press Enter to continue...")
 
-def Reset(): # Muss angepasst werden, basierend auf dem ursprünglichen Code
+def Reset(): 
     pass
 
-def Error(e): # Muss angepasst werden, basierend auf dem ursprünglichen Code
+def Error(e): 
     print(f"{color.RED}An error occurred: {e}{color.RESET}")
 
 try:
