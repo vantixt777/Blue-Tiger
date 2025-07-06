@@ -30,10 +30,10 @@ print("DISCLAIMER: Use only for legitimate network monitoring and security testi
 class DNSSpoofDetector:
     def __init__(self):
         self.trusted_dns_servers = [
-            '8.8.8.8',        # Google DNS
-            '1.1.1.1',        # Cloudflare DNS
-            '9.9.9.9',        # Quad9 DNS
-            '208.67.222.222'  # OpenDNS
+            '8.8.8.8',        
+            '1.1.1.1',        
+            '9.9.9.9',        
+            '208.67.222.222' 
         ]
         self.local_dns_server = None
         self.results = defaultdict(list)
@@ -59,7 +59,7 @@ class DNSSpoofDetector:
             pass
         
         try:
-            # Fallback method for Windows
+            
             import subprocess
             output = subprocess.check_output(['ipconfig', '/all']).decode('utf-8')
             for line in output.split('\n'):
@@ -78,7 +78,7 @@ class DNSSpoofDetector:
         try:
             resolver = dns.resolver.Resolver()
             resolver.nameservers = [server]
-            resolver.lifetime = 2  # Timeout in seconds
+            resolver.lifetime = 2  
             answers = resolver.resolve(domain, record_type)
             return sorted([str(r) for r in answers])
         except Exception as e:
@@ -89,24 +89,24 @@ class DNSSpoofDetector:
         """Check for DNS spoofing on a specific domain"""
         print(f"\n[*] Testing domain: {domain}")
         
-        # Get responses from trusted DNS servers
+        
         trusted_responses = []
         for server in self.trusted_dns_servers:
             response = self.query_dns(server, domain)
             if response:
                 trusted_responses.append(response)
                 print(f"[+] {server} response: {response}")
-            time.sleep(0.5)  # Rate limiting
+            time.sleep(0.5)  
         
         if not trusted_responses:
             print("[-] Could not get responses from trusted servers")
             return
         
-        # Get most common trusted response (consensus)
+        
         consensus = max(set(tuple(r) for r in trusted_responses), 
                        key=lambda x: trusted_responses.count(list(x)))
         
-        # Get local DNS response
+        
         local_response = self.query_dns(self.local_dns_server, domain)
         if not local_response:
             print("[-] Could not get response from local DNS server")
@@ -114,7 +114,7 @@ class DNSSpoofDetector:
         
         print(f"[+] Local DNS ({self.local_dns_server}) response: {local_response}")
         
-        # Compare responses
+        
         if tuple(local_response) != consensus:
             print("[!] POTENTIAL DNS SPOOFING DETECTED!")
             print(f"    Expected: {list(consensus)}")
@@ -135,7 +135,7 @@ class DNSSpoofDetector:
         print("\n[*] Starting DNS spoofing detection tests...")
         for domain in self.test_domains:
             self.check_for_spoofing(domain)
-            time.sleep(1)  # Rate limiting
+            time.sleep(1)  
         
         self.print_summary()
 
