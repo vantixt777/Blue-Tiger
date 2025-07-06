@@ -65,10 +65,10 @@ class AniworldChecker:
             return
             
         print(f"\n[~] Checking account '{username}'...")
-        time.sleep(2)  # Simulation
+        time.sleep(2)  
         
-        # Generate random demo response
-        exists = random.choice([True, False, True])  # 66% chance exists
+        
+        exists = random.choice([True, False, True])  
         
         if exists:
             join_date = f"202{random.randint(1,3)}-{random.randint(1,12):02d}-{random.randint(1,28):02d}"
@@ -114,7 +114,7 @@ class AniworldChecker:
         print("╠══════════════════════════════╣")
         
         for username in usernames:
-            exists = random.choice([True, False, True])  # Weighted random
+            exists = random.choice([True, False, True])  
             status = "EXISTS" if exists else "NOT FOUND"
             color = "\033[92m" if exists else "\033[91m"
             print(f"║ {username.ljust(20)} {color}{status}\033[0m ║")
@@ -148,7 +148,7 @@ class AniworldChecker:
         print("5. Exit - Close the program")
         input("\nPress Enter to continue...")
 
-# Run the program
+
 if __name__ == "__main__":
     try:
         checker = AniworldChecker()
