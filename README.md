@@ -29,7 +29,7 @@
 1. Download or clone the repository using the following command:
 
    ```bash
-   git clone https://github.com/your-username/BlueTiger.git
+   git clone https://github.com/vantixt777/Blue-Tiger.git
    ```
 
 2. Navigate to the directory:
