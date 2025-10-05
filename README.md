@@ -1,3 +1,4 @@
+![Image Alt](https://github.com/vantixt777/Blue-Tiger/blob/9764ef2c323d92c2be3e9165b834327c6f1ce362/bluetiger%20pic.png)
 ![Image Alt](https://github.com/vantixt777/Blue-Tiger/blob/f7d47667637e478ccb406c4b2953a6bfc749cf4f/BlueTiger%20pic%20menu%202.png)
 
 ```bash
