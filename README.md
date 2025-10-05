@@ -1,4 +1,4 @@
-
+![Image Alt](https://github.com/vantixt777/Blue-Tiger/blob/f7d47667637e478ccb406c4b2953a6bfc749cf4f/BlueTiger%20pic%20menu%202.png)
 
 ```bash
 sudo apt update && sudo apt upgrade -y
